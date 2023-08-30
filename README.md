@@ -1,2 +1,2 @@
 # Dashboard
- Angular
+Frontend of Angular Application
