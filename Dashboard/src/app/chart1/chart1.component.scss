@@ -1,0 +1,140 @@
+.container {
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
+  
+  mat-card {
+    margin: 0.5rem;
+  }
+  
+  app-card {
+    margin: 0 0.5rem;
+  }
+  
+  mat-card-content {
+    display: flex !important;
+    height: 600px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  mat-card-content.chart-container {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+  
+    #chart-container {
+      grid-row: 2 / 3;
+    }
+  }
+  
+  
+  app-dropdown {
+    margin: 0 0.5rem;
+  }
+  
+  .action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .filters {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .action-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    margin-right: 1rem;
+  }
+  
+  .header-row {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .info-button {
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: transparent url(/assets/icons/general/Info.svg) no-repeat;
+    background-size: contain;
+    border: none;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  table, td, th {
+    table-layout: fixed;
+    border: 1px black solid;
+    border-collapse: collapse;
+    padding: 0.5em;
+    width: 400px;
+  }
+  
+  th {
+    background-color: lightgrey;
+    font-size: 16px;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  .tech-boxes {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    padding: 0; 
+  }
+  
+  .tech-box {
+    flex: 0 0 auto;
+    width: 80px;  
+    height: 40px; 
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 4px; 
+  }
+  
+  .tech-box h5, .tech-box .percentage {
+    font-size: 13px; 
+    margin: 0;  
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+  }
+  
+  .percentage {
+    font-weight: bold;
+  }
+  
+  .red-circle {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
